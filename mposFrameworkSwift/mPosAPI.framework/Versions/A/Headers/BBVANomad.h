@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EmvSwipeController.h"
-#import "WisePadController.h"
+#import "BBDeviceController.h"
+#import "BBDeviceOTAController.h"
 #import "AFNetworking.h"
 #import "AFHTTPSessionManager.h"
+#import <sys/utsname.h>
+#import <AudioToolbox/AudioServices.h>
+#import <QuartzCore/QuartzCore.h>
 
 @protocol BBVADelegate <NSObject>
 @optional
@@ -36,7 +39,7 @@
 - (void)applicationListResult:(NSArray*)result;
 @end
 
-@interface BBVANomad : NSObject <EmvSwipeControllerDelegate, WisePadControllerDelegate, UIAlertViewDelegate, UITextFieldDelegate>
+@interface BBVANomad : NSObject <BBDeviceControllerDelegate, BBDeviceOTAControllerDelegate, UIAlertViewDelegate, UITextFieldDelegate>
 {
     BOOL isBadSwiped;
     BOOL isWrongPin;
@@ -50,10 +53,13 @@
     BOOL isStartEmvWithTerminalTime;
     BOOL isStartEmvWithDisabledDisplayText;
     BOOL isAutoConnectLastBTv4Device;
+    BOOL isAutoConnectLastBTDevice;
+    NSMutableDictionary *BTDeviceDictionary;
     
     NSMutableDictionary *bluetoothDeviceDict;
     NSMutableDictionary *ticket;
     BOOL usedPin;
+    BOOL bypass;
     
     BOOL isCheckingCardPresent;
     
@@ -82,8 +88,8 @@
 }
 @property (retain) id delegate;
 
-@property (nonatomic, assign) id<EmvSwipeControllerDelegate> EmvSwipeControllerDelegate;
-@property (nonatomic, assign) id<WisePadControllerDelegate> WisePadControllerDelegate;
+@property (nonatomic, assign) id<BBDeviceControllerDelegate> BTControllerDelegate;
+@property (nonatomic, assign) id<BBDeviceOTAControllerDelegate> BTOTAControllerDelegate;
 
 @property (nonatomic) NSString *concepto;
 @property (nonatomic) NSString *monto;

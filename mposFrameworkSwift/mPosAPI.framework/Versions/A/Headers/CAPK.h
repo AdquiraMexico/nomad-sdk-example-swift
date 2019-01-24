@@ -1,8 +1,8 @@
 //
 //  CAPK.h
 //
-//  Created by AlexWong on 2015-03-27.
-//  Copyright (c) 2015 BBPOS Limited. All rights reserved.
+//  Created by Alex Wong on 2017-08-18.
+//  Copyright 2017 BBPOS LTD. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
