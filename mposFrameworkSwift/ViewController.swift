@@ -17,8 +17,9 @@ class ViewController: UIViewController, BBVADelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //self.bbvaAPI.delegate = self;
+      
         bbvaNomad.delegate = self
-        
         bbvaNomad.login(withUsername: "v1", andPassword: "v1", andEnv: "D")
         
         scan!.addTarget(self, action: #selector(scanStuff), for: .touchDown)
@@ -31,12 +32,17 @@ class ViewController: UIViewController, BBVADelegate {
     
     @objc private func scanStuff(){
         print("escanea")
+       // bbvaNomad.initBBVANomad()
+        
         bbvaNomad.scanNomad()
+        //connectionResult(withSuccess:true)
+//bbvaNomad.connect(toNomad:"E405091A-5B26-4FA9-B1BE-EA3DEE58349F")
     }
     
     func loginSucceded(_ success: Bool, andToken token: String!, andDictionary info: [AnyHashable : Any]!) {
         print("sirvo")
         print(info);
+
     }
     
     func connectionResult(withSuccess success: Bool, andResult result: [Any]!) {
@@ -49,6 +55,12 @@ class ViewController: UIViewController, BBVADelegate {
         print(transaction)
     }
 
+
+    func scanBluetooth() {
+        
+      //  bbvaNomad.scanNomad()
+        //createPopUpLoader(withMessage: "Buscando dispositivos")
+    }
 
 }
 

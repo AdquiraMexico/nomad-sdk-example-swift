@@ -62,21 +62,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F0A9E271FB9EF2D006D85F4 /* QuartzCore.framework in Frameworks */,
-				0F0A9E251FB9EF22006D85F4 /* ExternalAccessory.framework in Frameworks */,
-				0F0A9E231FB9EF14006D85F4 /* CoreBluetooth.framework in Frameworks */,
-				0F0A9E211FB9EF0A006D85F4 /* AVFoundation.framework in Frameworks */,
-				0F0A9E1F1FB9EEFE006D85F4 /* MessageUI.framework in Frameworks */,
-				0F0A9E1D1FB9EEF4006D85F4 /* MediaPlayer.framework in Frameworks */,
-				0F0A9E1B1FB9EEEB006D85F4 /* SystemConfiguration.framework in Frameworks */,
-				0F0A9E191FB9EEE2006D85F4 /* UIKit.framework in Frameworks */,
-				0F0A9E171FB9EED6006D85F4 /* Foundation.framework in Frameworks */,
-				0F0A9E151FB9EECB006D85F4 /* CoreGraphics.framework in Frameworks */,
-				0F0A9E131FB9EEBB006D85F4 /* AudioToolbox.framework in Frameworks */,
-				0F0A9E111FB9EEAE006D85F4 /* CoreAudio.framework in Frameworks */,
-				0F0A9E0F1FB9EEA0006D85F4 /* CoreFoundation.framework in Frameworks */,
-				0F0A9E0E1FB9EE9B006D85F4 /* CoreLocation.framework in Frameworks */,
 				0F0A9E091FB9EB3D006D85F4 /* mPosAPI.framework in Frameworks */,
+				0F0A9E0E1FB9EE9B006D85F4 /* CoreLocation.framework in Frameworks */,
+				0F0A9E0F1FB9EEA0006D85F4 /* CoreFoundation.framework in Frameworks */,
+				0F0A9E111FB9EEAE006D85F4 /* CoreAudio.framework in Frameworks */,
+				0F0A9E131FB9EEBB006D85F4 /* AudioToolbox.framework in Frameworks */,
+				0F0A9E151FB9EECB006D85F4 /* CoreGraphics.framework in Frameworks */,
+				0F0A9E171FB9EED6006D85F4 /* Foundation.framework in Frameworks */,
+				0F0A9E191FB9EEE2006D85F4 /* UIKit.framework in Frameworks */,
+				0F0A9E1B1FB9EEEB006D85F4 /* SystemConfiguration.framework in Frameworks */,
+				0F0A9E1D1FB9EEF4006D85F4 /* MediaPlayer.framework in Frameworks */,
+				0F0A9E1F1FB9EEFE006D85F4 /* MessageUI.framework in Frameworks */,
+				0F0A9E271FB9EF2D006D85F4 /* QuartzCore.framework in Frameworks */,
+				0F0A9E211FB9EF0A006D85F4 /* AVFoundation.framework in Frameworks */,
+				0F0A9E231FB9EF14006D85F4 /* CoreBluetooth.framework in Frameworks */,
+				0F0A9E251FB9EF22006D85F4 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,13 +349,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZJAC7QT645;
+				DEVELOPMENT_TEAM = MJE87L4R92;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/mposFrameworkSwift",
 				);
 				INFOPLIST_FILE = mposFrameworkSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zertuche.mposFrameworkSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,13 +370,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZJAC7QT645;
+				DEVELOPMENT_TEAM = MJE87L4R92;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/mposFrameworkSwift",
 				);
 				INFOPLIST_FILE = mposFrameworkSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zertuche.mposFrameworkSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
